@@ -1,0 +1,20 @@
+@import "./settings.css";
+
+@media only screen and (min-width: $breakpoint-large) {
+  #hamburger {
+    display: none;
+  }
+
+  #github {
+    float: right;
+  }
+
+  nav {
+    padding: 20px;
+    width:   auto;
+  }
+
+  main {
+    padding: 30px 60px 60px 60px;
+  }
+}

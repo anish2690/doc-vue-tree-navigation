@@ -1,0 +1,135 @@
+@import "./settings.css";
+
+html, body {
+  height:   100%;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $blue-vue;
+}
+
+a {
+  color: $green-vue;
+}
+
+nav, main {
+  height:      100%;
+  overflow-y:  scroll;
+}
+
+nav {
+  padding: 0;
+  width:   0;
+}
+
+main {
+  flex:     1;
+  padding:  25px;
+
+  section {
+    margin-top: 40px;
+  }
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+pre {
+  border-left-color: $green-vue; 
+}
+
+.hljs-string,
+.hljs-number {
+  color: $violet;
+}
+
+.tag {
+  color: $gray-lighten-1;
+}
+
+.tree-navigation {
+  margin-top:   42px;
+  margin-right: 20px;
+
+  a {
+    color: $gray-darken-1;
+
+    &:hover,
+    &:focus {
+      color: $green-vue;
+    }
+  }
+
+  ul {
+    margin:    0;
+    font-size: 0.95em;
+
+    li {
+      margin-bottom: 0;
+      font-weight:   700;
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  ul > ul {
+    li {
+      font-weight: 400;
+    }
+  }
+
+  .navigation-toggle {
+    .navigation-toggle-icon {
+      border-color: $green-vue;
+      transition:   transform 0.1s;
+    }
+  }
+}
+
+.additional {
+  font-size: 0.8em;
+}
+
+.container {
+  height:    100%;
+  display:   flex;
+  max-width: 1400px;
+  padding:   0;
+}
+
+#app {
+  height: 100%;
+
+  &.navOpen {
+    nav {
+      padding: 20px;
+      width:   100vw;
+    }
+
+    main {
+      display: none;
+    }
+  }
+}
+
+#hamburger {
+  position:         absolute;
+  right:            20px;
+  top:              10px;
+  z-index:          1;
+  padding:          10px;
+  cursor:           pointer;
+}
+
+#github, #hamburger {
+  color: $gray-lighten-1;
+  
+  &:hover {
+    color: $gray;
+  }
+}

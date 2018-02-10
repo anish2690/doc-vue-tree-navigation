@@ -1,0 +1,48 @@
+{
+  "name": "doc-vue-tree-navigation",
+  "description": "Documentation/demo page for vue-tree-navigation",
+  "version": "1.0.0",
+  "author": "Michaela Robosova <robosova.michaela@seznam.cz>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "vue": "^2.5.11",
+    "vue-highlightjs": "^1.3.3",
+    "vue-router": "^3.0.1",
+    "vue-tree-navigation": "git://github.com/MisRob/vue-tree-navigation.git#router-support"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.17.0",
+    "eslint-config-genius": "^0.1.4",
+    "eslint-plugin-html": "^4.0.2",
+    "file-loader": "^1.1.4",
+    "postcss": "^6.0.17",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
