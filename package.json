@@ -15,7 +15,7 @@
     "vue": "^2.5.11",
     "vue-highlightjs": "^1.3.3",
     "vue-router": "^3.0.1",
-    "vue-tree-navigation": "git://github.com/MisRob/vue-tree-navigation.git#router-support"
+    "vue-tree-navigation": "^2.0.0"
   },
   "browserslist": [
     "> 1%",
